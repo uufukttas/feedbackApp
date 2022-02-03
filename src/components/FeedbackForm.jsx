@@ -3,7 +3,7 @@ import Card from "./shared/Card";
 import Button from "./shared/Button";
 import { useState } from "react";
 
-function FeedbackForm() {
+function FeedbackForm({ handleFeedback }) {
   const [text, setText] = useState("");
   const [rating, setRating] = useState(10);
   const [btnDisabled, setBtnDisabled] = useState(true);
@@ -11,13 +11,20 @@ function FeedbackForm() {
 
   const addReview = (event) => {
     event.preventDefault();
+
+    handleFeedback({
+        rating,
+        text,
+      });
+
+      setText('');
   };
 
   const handleChange = (event) => {
     if (text === "") {
       setBtnDisabled(true);
       setMessage(null);
-    } else if (text !== "" && text.length < 10) {
+    } else if (text !== "" && text.trim().length < 10) {
       setBtnDisabled(true);
       setMessage("Text must be at least 10 charahcters");
     } else {

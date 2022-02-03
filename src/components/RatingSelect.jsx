@@ -4,7 +4,7 @@ function RatingSelect({ select }) {
   const [selected, setSelected] = useState(10);
   const handleChange = (event) => {
     setSelected(+event.target.value);
-    select(selected);
+    select(+event.target.value);
   };
   return (
     <ul className="rating">
