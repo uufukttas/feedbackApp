@@ -1,24 +1,3 @@
 {
-  "feedback": [
-    {
-      "rating": "10",
-      "text": "This is updated feedback id = 2",
-      "id": 2
-    },
-    {
-      "id": 3,
-      "rating": 8,
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae."
-    },
-    {
-      "rating": "10",
-      "text": "This is new feedback",
-      "id": 4
-    },
-    {
-      "rating": "10",
-      "text": "This is new feedback id5",
-      "id": 5
-    }
-  ]
+  "feedback": []
 }
