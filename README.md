@@ -18,5 +18,5 @@ All dependencies added.
 ```yarn dev``` or ```npm dev```
 
 This project worked.
-Go to the localhost in the 3000 port
+Go to the localhost in the 3000 port.
 127.0.0.1:3000
