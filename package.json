@@ -19,11 +19,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run server && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server db.json --port 5000",
-    "dev": "concurrently \"npm run server\" \"yarn start\""
+    "dev": "concurrently \"npm run server\" \"yarn start\"",
+    "production": "concurrently \"npm run server\" \"yarn build\""
   },
   "eslintConfig": {
     "extends": [
