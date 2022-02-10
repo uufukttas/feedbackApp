@@ -19,10 +19,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run server && react-scripts build",
+    "build": "concurrently \"npm run server\" \"react-scripts build\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 5000",
+    "server": "json-server db.json --port 5000",
     "dev": "concurrently \"npm run server\" \"yarn start\""
   },
   "eslintConfig": {
