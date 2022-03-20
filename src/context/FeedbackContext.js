@@ -32,8 +32,6 @@ export const FeedbackProvider = ({ children }) => {
     });
     const data = await response.json();
 
-
-    
     setFeedback([data, ...feedback]);
   };
 
